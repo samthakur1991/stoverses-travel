@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ST Overseas Export Consultancy - Your trusted partner for global trade and overseas opportunities. Professional export consultancy, trade support, documentation, and compliance services.">
+    <meta name="keywords" content="export consultancy, overseas trade, international business, GST 02GKWPR0923P1ZE, Ritu Raj">
+    <meta name="author" content="ST Overseas Export Consultancy">
+    <title>ST Overseas Export Consultancy - Global Trade Partners</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #000;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            color: #FFD700;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .logo svg {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(51,51,51,0.8) 100%), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFD700;
+            position: relative;
+            overflow: hidden;
+        }
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, transparent 70%);
+            animation: pulse 4s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #FFD700;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #FFA500;
+        }
+        .airplane {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            animation: fly 10s linear infinite;
+        }
+        @keyframes fly {
+            0% { transform: translateX(-100px) translateY(50px) rotate(0deg); }
+            25% { transform: translateX(25%) translateY(-50px) rotate(90deg); }
+            50% { transform: translateX(50%) translateY(50px) rotate(180deg); }
+            75% { transform: translateX(75%) translateY(-50px) rotate(270deg); }
+            100% { transform: translateX(100vw) translateY(50px) rotate(360deg); }
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            background-color: #000;
+            color: #FFD700;
+        }
+        section:nth-child(even) {
+            background-color: #111;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        section p, section ul {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        .services, .why-choose {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service, .reason {
+            flex: 1 1 300px;
+            margin: 20px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255,215,0,0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+        .service:hover, .reason:hover {
+            transform: translateY(-10px);
+        }
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 15px;
+        }
+        .business-details {
+            text-align: center;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact .cta-button {
+            margin-top: 20px;
+        }
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255,215,0,0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+            background-color: #000;
+            color: #FFD700;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .contact-form button {
+            background-color: #FFD700;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #FFA500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #FFD700;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2em;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .services, .why-choose {
+                flex-direction: column;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+            .service img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Globe -->
+                    <circle cx="50" cy="50" r="40" fill="#FFD700" stroke="#000" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="20" fill="#000"/>
+                    <!-- Airplane -->
+                    <path d="M10 50 L30 45 L35 50 L30 55 Z" fill="#FFD700" stroke="#000" stroke-width="1"/>
+                    <path d="M35 50 L40 48 L42 50 L40 52 Z" fill="#FFD700" stroke="#000" stroke-width="1"/>
+                </svg>
+                ST OVERSEAS EXPORT CONSULTANCY
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-choose">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Trusted Partner for Global Trade & Overseas Opportunities</h1>
+                <p>Unlock international markets with expert guidance and seamless export solutions.</p>
+                <a href="get-started.html" class="cta-button">Get Started</a>
+            </div>
+        </div>
+        <div class="airplane">
+            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 25 L30 20 L35 25 L30 30 Z" fill="#FFD700"/>
+                <path d="M35 25 L40 23 L42 25 L40 27 Z" fill="#FFD700"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>ST Overseas Export Consultancy is a professional firm dedicated to assisting businesses in navigating the complexities of international trade. We provide expert guidance on export processes, documentation, compliance, and strategic business advisory to help our clients expand globally with confidence.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Luxury airport terminal, first class flight experience">
+                    <h3>Export Consultancy</h3>
+                    <p>Tailored advice on entering new markets and optimizing export strategies.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Ultra luxury hotel lobby, billionaire lifestyle">
+                    <h3>Overseas Trade Support</h3>
+                    <p>End-to-end support for international transactions and partnerships.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Luxury black car chauffeur service">
+                    <h3>Documentation & Compliance</h3>
+                    <p>Ensuring all legal and regulatory requirements are met seamlessly.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Professional travel consultant helping clients">
+                    <h3>Business Advisory</h3>
+                    <p>Strategic insights to drive growth and profitability in global ventures.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Taxi & Cab Booking">
+                    <h3>Taxi & Cab Booking</h3>
+                    <p>Airport pickup, drop service, and city travel with professional drivers and luxury vehicles.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Tourist Visa Assistance">
+                    <h3>Tourist Visa Assistance</h3>
+                    <p>Easy and transparent tourist visa support with complete documentation and expert guidance.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Travel Planning & Itinerary">
+                    <h3>Travel Planning & Itinerary</h3>
+                    <p>Personalized travel plans designed for comfort, safety, and unforgettable experiences. Travel like a billionaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="why-choose">
+                <div class="reason">
+                    <h3>Trusted</h3>
+                    <p>Proven track record with satisfied clients worldwide.</p>
+                </div>
+                <div class="reason">
+                    <h3>Transparent</h3>
+                    <p>Clear communication and honest pricing.</p>
+                </div>
+                <div class="reason">
+                    <h3>Professional</h3>
+                    <p>Expert team with deep industry knowledge.</p>
+                </div>
+                <div class="reason">
+                    <h3>Client-Focused</h3>
+                    <p>Customized solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="business-details">
+        <div class="container">
+            <h2>Business Details</h2>
+            <p><strong>GST Number:</strong> 02GKWPR0923P1ZE</p>
+            <p><strong>Consultancy Name:</strong> ST Overseas Export Consultancy</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Contact Person:</strong> Ritu Raj</p>
+            <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/918263945440" target="_blank">+91 82639 45440</a></p>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ST Overseas Export Consultancy. All rights reserved.</p>
+            <p>GST Number: 02GKWPR0923P1ZE</p>
+            <p>Contact: Ritu Raj | <a href="https://wa.me/918263945440" target="_blank">+91 82639 45440</a></p>
+            <p>We don’t just book tickets — we create luxury travel experiences.</p>
+            <p>From flight to hotel, taxi to tourist visa, we make your journey safe, secure, fast, and extremely comfortable.</p>
+            <p>Luxury travel with trust. Luxury travel with class. Luxury travel with ST Overseas Export Consultancy.</p>
+            <p>“Book Luxury Travel Now” “Travel Like a Billionaire” “Plan Your Journey with Experts” “Safe. Secure. Luxury Travel.”</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission (basic alert for demo; integrate with backend for real use)
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            // Here, you can add code to send the form data to a server
+        });
+    </script>
+</body>
+</html>
